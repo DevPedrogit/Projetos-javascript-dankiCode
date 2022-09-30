@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            header {
+                background-color: #0022ff;
+                text-align: center;
+                color: white;
+                padding: 20px 0;
+            }
+
+            .lista-cadastro {
+                display: 0;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+
+            .lista-cadastro input[type=text], .lista-cadastro input[type=number] {
+                flex: 1;
+                height: 40px;
+                padding-left: 20px;
+            }
+
+            .lista-cadastro input[type=submit] {
+                height: 40px;
+                padding: 0 5px;
+                cursor: pointer;
+            }
+
+             .lista-produto-single {
+                display: flex;
+                border-bottom: 1px solid #38648f;
+                padding: 10px 30px;
+                margin: 20px 0;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .lista-produto-single .price-produto {
+                background-color: #172894;
+                padding: 8px 10px;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .soma-produto {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h2>App lista de supermercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="Nome do produto..."
+            name="nome-produto">
+            <input type="number" placeholder="Valor do produto"
+            name="valor-produto">
+            <input type="submit" name="acao" value="Cadastrar">
+        </div>
+
+        <div class="lista-produtos">
+        <!--    
+            <div class="lista-produto-single">
+                <h3>RedBull</h3>
+                <span class="price-produto">R$ 20,00</span>
+            </div>
+            <div class="lista-produto-single">
+                <h3>RedBull</h3>
+                <span class="price-produto">R$ 20,00</span>
+            </div>
+            <div class="lista-produto-single">
+                <h3>RedBull</h3>
+                <span class="price-produto">R$ 20,00</span>
+            </div>
+            <div class="lista-produto-single">
+                <h3>RedBull</h3>
+                <span class="price-produto">R$ 20,00</span>
+            </div>
+        -->
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: <span>R$ 00.00</span></h1>
+        </div>
+
+        <button name="limpar" style="cursor: pointer;">Limpar</button>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
